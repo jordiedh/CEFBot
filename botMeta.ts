@@ -1,0 +1,17 @@
+const Discord = require('discord.js');
+export const bot = new Discord.Client({ intents: [Discord.GatewayIntentBits.Guilds,
+	Discord.GatewayIntentBits.GuildMembers,
+	Discord.GatewayIntentBits.GuildModeration,
+	Discord.GatewayIntentBits.GuildEmojisAndStickers,
+	Discord.GatewayIntentBits.GuildIntegrations,
+	Discord.GatewayIntentBits.GuildWebhooks,
+	Discord.GatewayIntentBits.GuildInvites,
+	Discord.GatewayIntentBits.GuildVoiceStates,
+	Discord.GatewayIntentBits.GuildPresences,
+	Discord.GatewayIntentBits.GuildMessages,
+	Discord.GatewayIntentBits.GuildMessageReactions,
+	Discord.GatewayIntentBits.GuildMessageTyping,
+	Discord.GatewayIntentBits.DirectMessages,
+	Discord.GatewayIntentBits.DirectMessageReactions,
+	Discord.GatewayIntentBits.DirectMessageTyping,
+	Discord.GatewayIntentBits.MessageContent] });
